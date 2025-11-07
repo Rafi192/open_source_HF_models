@@ -39,3 +39,11 @@ from sentence_transformers import util
 cosine_scores = util.cos_sim(embeddings1, embeddings2)
 
 print("----------   cosine score -------",cosine_scores)
+
+for i in range(len(sentances1)):
+    print("{} \t\t {} \t\t score:{:4f}".format(
+        sentances1[i],
+        sentances2[i], 
+        cosine_scores[i][i]
+    ))
+    

@@ -1,2 +1,4 @@
 .env
 hf_env/
+embeddings/__pycache__/
+
